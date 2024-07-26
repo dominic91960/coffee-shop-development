@@ -1,9 +1,11 @@
 import "./App.css";
 import Hero from "./components/HeroSection/Hero";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="App bg-zinc-900 h-screen">
+    <div className="App">
+      <Navbar />
       <Hero />
     </div>
   );

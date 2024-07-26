@@ -10,8 +10,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
-      <div className="flex justify-between px-20 py-4 z-10">
+    <nav
+      className={`w-full absolute top-0 z-10 ${
+        isToggled && "backdrop-blur-sm h-screen"
+      }`}
+    >
+      <div className="flex justify-between py-4 px-20">
         <a href="/" className="h-14 w-auto">
           <img
             src={logo}
@@ -49,27 +53,27 @@ const Navbar = () => {
       </div>
       {/* mobile navbar */}
       <ul
-        className={`lg:hidden animate-open-menu origin-top text-white flex-col uppercase xl:gap-16 items-center font-manjari gap-y-8 pt-5 ${
+        className={`lg:hidden animate-open-menu origin-top text-white flex-col uppercase xl:gap-16 items-center font-manjari gap-y-8 pt-5 px-20 ${
           isToggled ? "flex" : "hidden"
         }`}
       >
-        <li className="cursor-pointer hover:text-primary w-4/5 text-left hover:scale-105 transition-transform duration-300">
+        <li className="cursor-pointer hover:text-primary w-full text-left hover:scale-105 transition-transform duration-300">
           <a href="/">Home</a>
           <hr className="opacity-10" />
         </li>
-        <li className="cursor-pointer hover:text-primary w-4/5 text-left mx-10 hover:scale-105 transition-transform duration-300">
+        <li className="cursor-pointer hover:text-primary w-full text-left mx-10 hover:scale-105 transition-transform duration-300">
           <a href="/">Menu</a>
           <hr className="opacity-10" />
         </li>
-        <li className="cursor-pointer hover:text-primary w-4/5 text-left mx-10 hover:scale-105 transition-transform duration-300">
+        <li className="cursor-pointer hover:text-primary w-full text-left mx-10 hover:scale-105 transition-transform duration-300">
           <a href="/">Locations</a>
           <hr className="opacity-10" />
         </li>
-        <li className="cursor-pointer hover:text-primary w-4/5 text-left mx-10 hover:scale-105 transition-transform duration-300">
+        <li className="cursor-pointer hover:text-primary w-full text-left mx-10 hover:scale-105 transition-transform duration-300">
           <a href="/">Contact</a>
           <hr className="opacity-10" />
         </li>
-        <li className="cursor-pointer hover:text-primary w-4/5 text-left mx-10 hover:scale-105 transition-transform duration-300">
+        <li className="cursor-pointer hover:text-primary w-full text-left mx-10 hover:scale-105 transition-transform duration-300">
           <a href="/">About</a>
           <hr className="opacity-10" />
         </li>
