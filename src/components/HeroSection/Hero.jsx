@@ -72,7 +72,7 @@ const Hero = () => {
           <div className="xl:w-3/5 mb-10">
             <Carousel />
           </div>
-          <div className="xl:text-left xl:pl-8 px-10 md:px-20 xl:px-0 pt-5 lg:pt-0">
+          <div className="xl:text-left xl:pl-8 px-10 md:px-20 xl:px-0 pt-5">
             <h4 className="font-noto-sans-tamil font-extrabold text-2xl mb-5 text-primary lg:text-3xl">
               Explore Our Coffee Menu
             </h4>
