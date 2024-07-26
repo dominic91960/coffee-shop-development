@@ -1,10 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Hero from "./components/HeroSection/Hero";
 
 function App() {
   return (
-    <div className="App">
-      <p className="text-[50px] text-red-600">Hello World</p>
+    <div className="App bg-zinc-900 h-screen">
+      <Hero />
     </div>
   );
 }
