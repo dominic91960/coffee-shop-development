@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full absolute top-0 z-10 ${
+      className={`w-full absolute top-0 z-20 ${
         isToggled && "backdrop-blur-sm h-screen"
       }`}
     >

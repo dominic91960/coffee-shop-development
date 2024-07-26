@@ -1,0 +1,6 @@
+.slick-dots > li > button::before {
+  margin-top: 20px;
+  color: #bf8425;
+  font-size: 15px;
+  opacity: 70%;
+}
