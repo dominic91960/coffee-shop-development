@@ -24,12 +24,12 @@ const SectionThree = () => {
           Taste Our Specialty Brew
         </button>
       </div>
-      <div className="font-noto-sans-tamil font-extrabold text-3xl md:text-4xl lg:text-5xl absolute bottom-[12vh] lg:bottom-[20vh] left-0 right-0">
+      <h2 className="font-noto-sans-tamil font-extrabold text-3xl md:text-4xl lg:text-5xl absolute bottom-[12vh] lg:bottom-[20vh] left-0 right-0">
         Cr
         <span className="border border-primary py-1 pe-2">
           afting Excellence
         </span>
-      </div>
+      </h2>
     </section>
   );
 };
