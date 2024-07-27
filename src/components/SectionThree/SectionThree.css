@@ -1,0 +1,6 @@
+.section-three-background {
+  background-image: url("../../assets/images/SectionThree/branch.png");
+  background-size: cover;
+  background-position-x: 25vw;
+  background-position-y: -40vh;
+}
