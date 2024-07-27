@@ -16,7 +16,7 @@ const Navbar = () => {
       }`}
     >
       <div className="flex justify-between py-4 px-20">
-        <a href="/" className="h-14 w-auto">
+        <a href="#hero" className="h-14 w-auto">
           <img
             src={logo}
             alt="logo"
@@ -26,19 +26,19 @@ const Navbar = () => {
         {/* main navbar */}
         <ul className="text-white lg:flex uppercase gap-12 xl:gap-16 items-center font-manjari hidden">
           <li className="cursor-pointer hover:text-primary hover:scale-105 transition-transform duration-300 drop-shadow-[1px_1px_2px_rgb(0,0,0)]">
-            <a href="/">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li className="cursor-pointer hover:text-primary hover:scale-105 transition-transform duration-300 drop-shadow-[1px_1px_2px_rgb(0,0,0)]">
-            <a href="/">Menu</a>
+            <a href="">Menu</a>
           </li>
           <li className="cursor-pointer hover:text-primary hover:scale-105 transition-transform duration-300 drop-shadow-[1px_1px_2px_rgb(0,0,0)]">
-            <a href="/">Locations</a>
+            <a href="">Locations</a>
           </li>
           <li className="cursor-pointer hover:text-primary hover:scale-105 transition-transform duration-300 drop-shadow-[1px_1px_2px_rgb(0,0,0)]">
-            <a href="/">Contact</a>
+            <a href="">Contact</a>
           </li>
           <li className="cursor-pointer hover:text-primary hover:scale-105 transition-transform duration-300 drop-shadow-[1px_1px_2px_rgb(0,0,0)]">
-            <a href="/">About</a>
+            <a href="">About</a>
           </li>
         </ul>
         <button
@@ -58,23 +58,23 @@ const Navbar = () => {
         }`}
       >
         <li className="cursor-pointer hover:text-primary w-full text-left hover:scale-105 transition-transform duration-300 drop-shadow-[1px_1px_2px_rgb(0,0,0)]">
-          <a href="/">Home</a>
+          <a href="#hero">Home</a>
           <hr className="opacity-10" />
         </li>
         <li className="cursor-pointer hover:text-primary w-full text-left mx-10 hover:scale-105 transition-transform duration-300 drop-shadow-[1px_1px_2px_rgb(0,0,0)]">
-          <a href="/">Menu</a>
+          <a href="">Menu</a>
           <hr className="opacity-10" />
         </li>
         <li className="cursor-pointer hover:text-primary w-full text-left mx-10 hover:scale-105 transition-transform duration-300 drop-shadow-[1px_1px_2px_rgb(0,0,0)]">
-          <a href="/">Locations</a>
+          <a href="">Locations</a>
           <hr className="opacity-10" />
         </li>
         <li className="cursor-pointer hover:text-primary w-full text-left mx-10 hover:scale-105 transition-transform duration-300 drop-shadow-[1px_1px_2px_rgb(0,0,0)]">
-          <a href="/">Contact</a>
+          <a href="">Contact</a>
           <hr className="opacity-10" />
         </li>
         <li className="cursor-pointer hover:text-primary w-full text-left mx-10 hover:scale-105 transition-transform duration-300 drop-shadow-[1px_1px_2px_rgb(0,0,0)]">
-          <a href="/">About</a>
+          <a href="">About</a>
           <hr className="opacity-10" />
         </li>
       </ul>

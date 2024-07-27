@@ -33,7 +33,7 @@ const Hero = () => {
             </button>
             <input
               type="text"
-              className="outline-none rounded-lg bg-white bg-opacity-80 w-[40ch] md:w-[50ch] text-secondary placeholder:text-secondary px-5 text-sm md:text-base"
+              className="outline-none rounded-lg bg-white bg-opacity-80 w-[35ch] md:w-[50ch] text-secondary placeholder:text-secondary px-5 text-sm md:text-base"
               placeholder="Search Your Happiness in Every Sip"
             />
           </div>
@@ -62,13 +62,13 @@ const Hero = () => {
           alt="Branch"
           className="absolute -top-28 md:-top-52 lg:-top-72 -z-10"
         />
-        <div className="font-noto-sans-tamil font-extrabold text-secondary text-2xl md:text-3xl lg:text-4xl lg:text-left lg:ps-20">
+        <h2 className="font-noto-sans-tamil font-extrabold text-secondary text-2xl md:text-3xl lg:text-4xl lg:text-left lg:ps-20">
           <span className="border border-secondary p-1 pe-0">
             Discover Our Coffee Sel
           </span>
           ection
-        </div>
-        <div className="xl:px-20 xl:flex xl:items-center">
+        </h2>
+        <div className="xl:px-20 xl:flex xl:items-center mb-10">
           <div className="xl:w-3/5 mb-10">
             <Carousel />
           </div>
