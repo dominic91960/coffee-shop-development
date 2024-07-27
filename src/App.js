@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import SectionTwo from "./components/SectionTwo/SectionTwo";
 import SectionThree from "./components/SectionThree/SectionThree";
 import SectionFour from "./components/SectionFour/SectionFour";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <Footer />
     </div>
   );
 }
