@@ -44,11 +44,11 @@ const Navbar = () => {
         <button
           id="hamburger-button"
           onClick={handleClick}
-          class={`relative h-8 w-8 text-3xl lg:hidden mt-4 drop-shadow-[1px_1px_2px_rgb(0,0,0)] ${
+          className={`relative h-8 w-8 text-3xl lg:hidden mt-4 drop-shadow-[1px_1px_2px_rgb(0,0,0)] ${
             isToggled && "toggle"
           }`}
         >
-          <div class="content-[''] h-[2px] w-8 rounded bg-white absolute before:content-[''] before:h-[2px] before:w-8 before:rounded before:bg-white before:absolute before:top-0 before:left-0 before:-mt-2 after:content-[''] after:h-[2px] after:w-8 after:rounded after:bg-white after:absolute after:top-0 after:left-0 after:mt-2 "></div>
+          <div className="content-[''] h-[2px] w-8 rounded bg-white absolute before:content-[''] before:h-[2px] before:w-8 before:rounded before:bg-white before:absolute before:top-0 before:left-0 before:-mt-2 after:content-[''] after:h-[2px] after:w-8 after:rounded after:bg-white after:absolute after:top-0 after:left-0 after:mt-2 "></div>
         </button>
       </div>
       {/* mobile navbar */}

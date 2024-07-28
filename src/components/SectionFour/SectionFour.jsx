@@ -47,7 +47,7 @@ const SectionFour = () => {
         <hr className="border-t-4 border-t-secondary w-1/4" />
       </div>
       <div className="px-20">
-        <h2 className="font-noto-sans-tamil font-extrabold text-3xl md:text-4xl lg:text-5xl uppercase pt-16 xl:pt-32 mb-16">
+        <h2 className="font-noto-sans-tamil font-extrabold text-[26px] md:text-4xl lg:text-5xl uppercase pt-16 xl:pt-32 mb-16">
           Bo
           <span className="border border-primary py-1 pe-10">
             ok Your Table
