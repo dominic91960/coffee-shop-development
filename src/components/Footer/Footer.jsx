@@ -17,16 +17,28 @@ const Footer = () => {
             sint. Velit officia consequat duis enim velit mollit.
           </p>
           <div className="flex gap-2">
-            <a href="">
+            <a
+              href=""
+              className="hover:scale-125 transition-transform duration-300"
+            >
               <img src={twitterIcon} alt="Twitter icon" className="w-8 h-8" />
             </a>
-            <a href="">
+            <a
+              href=""
+              className="hover:scale-125 transition-transform duration-300"
+            >
               <img src={facebookIcon} alt="Github icon" className="w-8 h-8" />
             </a>
-            <a href="">
+            <a
+              href=""
+              className="hover:scale-125 transition-transform duration-300"
+            >
               <img src={instagramIcon} alt="Github icon" className="w-8 h-8" />
             </a>
-            <a href="">
+            <a
+              href=""
+              className="hover:scale-125 transition-transform duration-300"
+            >
               <img src={githubIcon} alt="Github icon" className="w-8 h-8" />
             </a>
           </div>
@@ -37,16 +49,16 @@ const Footer = () => {
               company
             </p>
             <ul className="flex flex-col gap-4">
-              <li>
+              <li className="hover:scale-125 transition-transform duration-300">
                 <a href="">about</a>
               </li>
-              <li>
+              <li className="hover:scale-125 transition-transform duration-300">
                 <a href="">features</a>
               </li>
-              <li>
+              <li className="hover:scale-125 transition-transform duration-300">
                 <a href="">works</a>
               </li>
-              <li>
+              <li className="hover:scale-125 transition-transform duration-300">
                 <a href="">careers</a>
               </li>
             </ul>
@@ -56,16 +68,16 @@ const Footer = () => {
               help
             </p>
             <ul className="flex flex-col gap-4">
-              <li>
+              <li className="hover:scale-125 transition-transform duration-300">
                 <a href="">customer support</a>
               </li>
-              <li>
+              <li className="hover:scale-125 transition-transform duration-300">
                 <a href="">delivery details</a>
               </li>
-              <li>
+              <li className="hover:scale-125 transition-transform duration-300">
                 <a href="">terms & conditions</a>
               </li>
-              <li>
+              <li className="hover:scale-125 transition-transform duration-300">
                 <a href="">privacy policy</a>
               </li>
             </ul>
@@ -80,7 +92,7 @@ const Footer = () => {
             placeholder="enter your email"
             className="p-3 rounded-md mb-4 w-[30ch] md:w-[35ch] text-black"
           />
-          <button className="p-3 px-5 bg-black rounded-md mb-4">
+          <button className="p-3 px-5 bg-black rounded-md mb-4 hover:scale-105 transition-transform duration-300">
             Subscribe
           </button>
         </div>
@@ -88,7 +100,7 @@ const Footer = () => {
       <div className="pt-5 lg:pt-10">
         <hr className="opacity-30" />
         <p className="font-inter text-white text-xs pt-5">
-          © Copyright {date.getFullYear()}, All Rights Reserved by Logo
+          &#169; Copyright {date.getFullYear()}, All Rights Reserved by Logo
         </p>
       </div>
     </footer>

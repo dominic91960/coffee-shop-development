@@ -1,3 +1,20 @@
 .section-two-background {
   background-image: url("../../assets/images/SectionTwo/coffee-beans-background.png");
 }
+
+@keyframes animate-image {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+.animate-image {
+  animation: animate-image 4s ease-out infinite alternate;
+}
+
+.animate-image-reverse {
+  animation: animate-image 4s ease-out infinite alternate-reverse;
+}

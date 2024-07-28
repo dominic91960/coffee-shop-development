@@ -6,7 +6,8 @@ const SectionThree = () => {
   return (
     <section className="section-three-background relative">
       <div className="px-20 font-manjari font-semibold w-full flex flex-col items-center -translate-y-[38%] lg:-translate-y-[35%]">
-        <div className="mb-2 sm:w-4/5 md:w-3/5 lg:w-4/5">
+        <div className="mb-2 sm:w-4/5 md:w-3/5 lg:w-4/5 animate-image">
+          {/* <div className="mb-2 sm:w-4/5 md:w-3/5 lg:w-4/5 animate-image-lg"> */}
           <img
             src={specialtyBrew}
             alt="Specialty brew"
@@ -20,11 +21,14 @@ const SectionThree = () => {
           blend, carefully prepared by our skilled baristas to offer you a
           delightful and unforgettable coffee experience.
         </p>
-        <button className="bg-secondary text-white text-sm md:text-base lg:text-lg xl:text-2xl rounded-xl px-8 pt-2 pb-1 font-medium lg:pt-3">
+        <button className="bg-secondary text-white text-sm md:text-base lg:text-lg xl:text-2xl rounded-xl px-8 pt-2 pb-1 font-medium lg:pt-3 hover:scale-105 transition-transform duration-300">
           Taste Our Specialty Brew
         </button>
       </div>
-      <h2 className="font-noto-sans-tamil font-extrabold text-3xl md:text-4xl lg:text-5xl absolute bottom-[12vh] lg:bottom-[20vh] left-0 right-0">
+      <h2
+        className="font-noto-sans-tamil font-extrabold text-3xl md:text-4xl lg:text-5xl absolute bottom-[12vh] lg:bottom-[20vh] left-0 right-0"
+        data-aos="fade-left"
+      >
         Cr
         <span className="border border-primary py-1 pe-2">
           afting Excellence

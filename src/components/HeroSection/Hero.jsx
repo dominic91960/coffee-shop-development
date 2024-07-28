@@ -1,3 +1,5 @@
+import Typewriter from "typewriter-effect";
+
 import Carousel from "../Carousel/Carousel";
 import searchIcon from "../../assets/images/HeroSection/search.png";
 import coffeeCup from "../../assets/images/HeroSection/coffee-cup.png";
@@ -15,7 +17,21 @@ const Hero = () => {
             <span className="text-6xl md:text-8xl absolute top-0 md:left-10 left-4">
               &#8220;
             </span>
-            <h1>Where Every Cup Tells a Story</h1>
+            <h1 className="relative">
+              <span className="text-transparent">
+                Where Every Cup Tells a Story
+              </span>
+              <div className="absolute top-0 -left-1">
+                <Typewriter
+                  options={{
+                    strings: "Where Every Cup Tells a Story",
+                    autoStart: true,
+                    loop: true,
+                    cursor: "",
+                  }}
+                />
+              </div>
+            </h1>
             <span className="text-6xl md:text-8xl absolute right-4 md:right-10 translate-y-1">
               &#8221;
             </span>
@@ -41,11 +57,15 @@ const Hero = () => {
         {/* Coffee */}
         <div className="flex w-full lg:p-[5vw] justify-center lg:justify-end relative h-[200px] sm:h-[230px] md:h-[260px] lg:h-[200px]">
           <div className="w-[300px] h-[300px] absolute -bottom-[150px] sm:w-[320px] sm:h-[320px] sm:-bottom-[160px] md:w-[350px] md:h-[350px] md:-bottom-[180px] lg:w-[380px] lg:h-[380px] lg:-bottom-[185px] xl:w-[450px] xl:h-[450px] xl:-bottom-[220px]">
-            <div className="absolute top-0 left-0 w-full h-full rounded-full bg-white bg-opacity-70"></div>
+            <div
+              className="absolute top-0 left-0 w-full h-full rounded-full bg-white bg-opacity-70"
+              data-aos="zoom-in"
+              data-aos-anchor-placement="top-center"
+            ></div>
             <img
               src={coffeeCup}
               alt="Coffee cup"
-              className="absolute top-0 left-0 z-10"
+              className="absolute top-0 left-0 z-10 rotate-cup"
             />
             <img
               src={coffeeBeans}
@@ -62,7 +82,10 @@ const Hero = () => {
           alt="Branch"
           className="absolute -top-28 md:-top-52 lg:-top-72 -z-10"
         />
-        <h2 className="font-noto-sans-tamil font-extrabold text-secondary text-2xl md:text-3xl lg:text-4xl lg:text-left lg:ps-20">
+        <h2
+          className="font-noto-sans-tamil font-extrabold text-secondary text-2xl md:text-3xl lg:text-4xl lg:text-left lg:ps-20"
+          data-aos="fade-right"
+        >
           <span className="border border-secondary p-1 pe-0">
             Discover Our Coffee Sel
           </span>

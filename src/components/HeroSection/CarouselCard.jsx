@@ -22,9 +22,21 @@ const CarouselCard = ({ image, title, text, price }) => {
             {text}
           </p>
           <div className="flex justify-center gap-x-4">
-            <img src={coffeeIcon} alt="Coffee icon" className="w-5 h-5" />
-            <img src={cartIcon} alt="Cart icon" className="w-5 h-5" />
-            <img src={wishlistIcon} alt="Wishlist icon" className="w-5 h-5" />
+            <img
+              src={coffeeIcon}
+              alt="Coffee icon"
+              className="w-5 h-5 cursor-pointer hover:scale-125 transition-transform duration-300"
+            />
+            <img
+              src={cartIcon}
+              alt="Cart icon"
+              className="w-5 h-5 cursor-pointer hover:scale-125 transition-transform duration-300"
+            />
+            <img
+              src={wishlistIcon}
+              alt="Wishlist icon"
+              className="w-5 h-5 cursor-pointer hover:scale-125 transition-transform duration-300"
+            />
           </div>
           <div className="flex justify-center relative h-[25px]">
             <button className="bg-[#B88351] text-white rounded-lg hover:scale-105 transition-transform duration-300 font-manjari font-bold text-xl pt-3  pb-1 px-5 absolute -bottom-[30px]">

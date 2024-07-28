@@ -4,3 +4,31 @@
   background-position-x: 25vw;
   background-position-y: -40vh;
 }
+
+@keyframes animate-image {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes animate-image-lg {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-image {
+  animation: animate-image 4s ease-out infinite alternate;
+}
+
+@media (min-width: 1024px) {
+  .animate-image {
+    animation: animate-image-lg 4s ease-out infinite alternate;
+  }
+}

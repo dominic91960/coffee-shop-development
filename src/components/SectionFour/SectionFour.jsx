@@ -11,7 +11,7 @@ const SectionFour = () => {
           1987
         </h3>
         <div className="w-1/5 scale-[240%] xl:scale-[200%]">
-          <img src={coffeeCup} alt="Coffee cup" />
+          <img src={coffeeCup} alt="Coffee cup" className="rotate-cup" />
           <img
             src={coffeeBeans}
             alt="Coffee beans"
@@ -47,7 +47,10 @@ const SectionFour = () => {
         <hr className="border-t-4 border-t-secondary w-1/4" />
       </div>
       <div className="px-20">
-        <h2 className="font-noto-sans-tamil font-extrabold text-[26px] md:text-4xl lg:text-5xl uppercase pt-16 xl:pt-32 mb-16">
+        <h2
+          className="font-noto-sans-tamil font-extrabold text-[26px] md:text-4xl lg:text-5xl uppercase pt-16 xl:pt-32 mb-16"
+          data-aos="fade-right"
+        >
           Bo
           <span className="border border-primary py-1 pe-10">
             ok Your Table
@@ -64,7 +67,7 @@ const SectionFour = () => {
           </div>
           <textarea
             placeholder="special requests and comments"
-            className="bg-transparent border border-primary font-manjari font-bold uppercase lg:text-xl pt-2 xl:pt-4 pb-1 xl:pb-2 px-5 xl:px-7 mb-5 tracking-wide w-full"
+            className="bg-transparent border border-primary font-manjari font-bold uppercase lg:text-xl pt-2 xl:pt-4 pb-1 xl:pb-2 px-5 xl:px-7 mb-5 tracking-wide w-full input-pulse"
           ></textarea>
         </div>
       </div>

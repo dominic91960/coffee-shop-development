@@ -4,3 +4,32 @@
   background-position-x: -25vw;
   background-position-y: -5vh;
 }
+
+@keyframes rotate-cup {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-cup {
+  animation: rotate-cup 200s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.input-pulse {
+  animation: pulse 3s infinite;
+}
