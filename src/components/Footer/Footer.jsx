@@ -88,7 +88,7 @@ const Footer = () => {
             subscribe to our newsletter
           </p>
           <input
-            type="text"
+            type="email"
             placeholder="enter your email"
             className="p-3 rounded-md mb-4 w-[30ch] md:w-[35ch] text-black"
           />
