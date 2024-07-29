@@ -17,7 +17,7 @@ const SectionTwo = () => {
   return (
     <div className="section-two-background bg-[#271300] text-white bg-cover">
       <div className="px-20 pt-10 pb-20">
-        <section id="locations" className="scroll-mt-[35px]">
+        <section id="locations" className="scroll-mt-[35px] pt-20">
           <h2 className="font-noto-sans-tamil font-extrabold text-[22px] md:text-3xl lg:text-4xl mb-16">
             Exp
             <span className="border border-primary py-1">

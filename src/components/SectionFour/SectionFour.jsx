@@ -17,7 +17,7 @@ const SectionFour = () => {
 
   return (
     <div className="section-four-background">
-      <section id="about" className="scroll-mt-[260px]">
+      <section id="about" className="scroll-mt-[260px] group">
         <div className="flex items-center justify-around bg-secondary text-white">
           <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-offside">
             1987
@@ -26,8 +26,10 @@ const SectionFour = () => {
             <img
               src={coffeeCup}
               alt="Coffee cup"
-              data-aos="rotate-cup"
-              data-aos-anchor-placement="center-center"
+              // className="group-hover:-rotate-180 transition-transform duration-[2s] ease-out"
+              data-aos="rotate-coffee-cup"
+              data-aos-anchor-placement="top-center"
+              data-aos-delay="1000"
             />
             <img
               src={coffeeBeans}
@@ -65,7 +67,7 @@ const SectionFour = () => {
           <hr className="border-t-4 border-t-secondary w-1/4" />
         </div>
       </section>
-      <section id="contact" className="px-20">
+      <section id="contact" className="px-20 pt-8">
         <h2 className="font-noto-sans-tamil font-extrabold text-[26px] md:text-4xl lg:text-5xl uppercase pt-16 xl:pt-32 mb-16">
           Bo
           <span className="border border-primary py-1 pe-10">

@@ -5,7 +5,7 @@
   background-position-y: -5vh;
 }
 
-[data-aos="rotate-cup"] {
+[data-aos="rotate-coffee-cup"] {
   transform: rotate(0deg);
   transition-property: transform;
 
