@@ -64,13 +64,13 @@ const data = [
   },
 ];
 
-const Carousel = () => {
+const Carousel = ({ visible }) => {
   var settings = {
     dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 2,
-    autoplay: true,
+    autoplay: false,
     speed: 4000,
     autoplaySpeed: 4000,
     cssEase: "linear",
@@ -87,7 +87,7 @@ const Carousel = () => {
   };
 
   return (
-    <div>
+    <div className={`-translate-x-[100vw] ${visible && "slide-in"}`}>
       <Slider {...settings}>
         {data.map(({ image, title, text, price }, index) => (
           <CarouselCard
@@ -96,6 +96,7 @@ const Carousel = () => {
             title={title}
             text={text}
             price={price}
+            visible={visible}
           />
         ))}
       </Slider>

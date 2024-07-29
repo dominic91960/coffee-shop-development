@@ -1,3 +1,30 @@
 .section-two-background {
   background-image: url("../../assets/images/SectionTwo/coffee-beans-background.png");
 }
+
+[data-aos="slide-from-left"] {
+  transform: translateX(-80vw);
+  transition-property: transform;
+
+  &.aos-animate {
+    transform: translateX(0vw);
+  }
+}
+
+[data-aos="slide-from-right"] {
+  transform: translateX(80vw);
+  transition-property: transform;
+
+  &.aos-animate {
+    transform: translateX(0vw);
+  }
+}
+
+[data-aos="slide-from-right-two"] {
+  transform: translateX(20vw);
+  transition-property: transform;
+
+  &.aos-animate {
+    transform: translateX(0vw);
+  }
+}

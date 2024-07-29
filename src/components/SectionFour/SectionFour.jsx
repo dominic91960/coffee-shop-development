@@ -1,9 +1,20 @@
+import { useEffect } from "react";
+import AOS from "aos";
+
+import Input from "./Input";
+
 import coffeeCup from "../../assets/images/SectionFour/coffee-cup.png";
 import coffeeBeans from "../../assets/images/SectionFour/coffee-beans.png";
-import Input from "./Input";
+import "aos/dist/aos.css";
 import "./SectionFour.css";
 
 const SectionFour = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
     <section className="section-four-background">
       <div className="flex items-center justify-around bg-secondary text-white">
@@ -11,7 +22,12 @@ const SectionFour = () => {
           1987
         </h3>
         <div className="w-1/5 scale-[240%] xl:scale-[200%]">
-          <img src={coffeeCup} alt="Coffee cup" />
+          <img
+            src={coffeeCup}
+            alt="Coffee cup"
+            data-aos="rotate-cup"
+            data-aos-anchor-placement="top-center"
+          />
           <img
             src={coffeeBeans}
             alt="Coffee beans"

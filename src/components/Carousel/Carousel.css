@@ -4,3 +4,20 @@
   font-size: 15px;
   opacity: 70%;
 }
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100vw);
+  }
+  80% {
+    transform: translateX(1vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+.slide-in {
+  animation: slide-in 2s ease-out;
+  transform: translateX(0vw);
+}

@@ -1,3 +1,20 @@
 .hero-background {
   background-image: url("../../assets/images/HeroSection/bg-landing.png");
 }
+
+@keyframes move-cup {
+  0% {
+    transform: translate(0, 0) scale(100%) rotate(0deg);
+  }
+  80% {
+    transform: translate(-43vw, 47.5vh) scale(37%) rotate(90deg);
+  }
+  100% {
+    transform: translate(-42.2vw, 47.5vh) scale(37%) rotate(90deg);
+  }
+}
+
+.move-cup {
+  animation: move-cup 2s;
+  transform: translate(-42.2vw, 47.5vh) scale(37%) rotate(90deg);
+}

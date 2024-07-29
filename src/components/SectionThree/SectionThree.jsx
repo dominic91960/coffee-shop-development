@@ -1,4 +1,3 @@
-import branch from "../../assets/images/SectionThree/branch.png";
 import specialtyBrew from "../../assets/images/SectionThree/specialty-brew.png";
 import "./SectionThree.css";
 
@@ -20,7 +19,7 @@ const SectionThree = () => {
           blend, carefully prepared by our skilled baristas to offer you a
           delightful and unforgettable coffee experience.
         </p>
-        <button className="bg-secondary text-white text-sm md:text-base lg:text-lg xl:text-2xl rounded-xl px-8 pt-2 pb-1 font-medium lg:pt-3">
+        <button className="bg-secondary text-white text-sm md:text-base lg:text-lg xl:text-2xl rounded-xl px-8 pt-2 pb-1 font-medium lg:pt-3 hover:scale-105 transition-transform duration-300">
           Taste Our Specialty Brew
         </button>
       </div>

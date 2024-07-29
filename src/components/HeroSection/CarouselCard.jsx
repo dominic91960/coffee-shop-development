@@ -2,7 +2,7 @@ import coffeeIcon from "../../assets/images/HeroSection/coffee-icon.png";
 import cartIcon from "../../assets/images/HeroSection/shopping-cart-icon.png";
 import wishlistIcon from "../../assets/images/HeroSection/love-icon.png";
 
-const CarouselCard = ({ image, title, text, price }) => {
+const CarouselCard = ({ image, title, text, price, visible }) => {
   return (
     <div className="flex justify-center">
       <div className="rounded-xl bg-[#DBC1A8] w-[200px]  p-4 mt-32 mb-5 h-[265px] ">
@@ -11,7 +11,9 @@ const CarouselCard = ({ image, title, text, price }) => {
             <img
               src={image}
               alt={title}
-              className="absolute -top-[60px]  scale-150 w-[100px] "
+              className={`absolute -top-[60px] w-[100px] transition-all duration-1000 delay-[2s] ease-out ${
+                visible ? "opacity-100 scale-150" : "opacity-0 scale-100"
+              }`}
             />
           </div>
           <h3 className="font-manjari font-bold text-2xl text-[#221807]">
@@ -22,9 +24,21 @@ const CarouselCard = ({ image, title, text, price }) => {
             {text}
           </p>
           <div className="flex justify-center gap-x-4">
-            <img src={coffeeIcon} alt="Coffee icon" className="w-5 h-5" />
-            <img src={cartIcon} alt="Cart icon" className="w-5 h-5" />
-            <img src={wishlistIcon} alt="Wishlist icon" className="w-5 h-5" />
+            <img
+              src={coffeeIcon}
+              alt="Coffee icon"
+              className="w-5 h-5 cursor-pointer hover:scale-125 transition-transform duration-300"
+            />
+            <img
+              src={cartIcon}
+              alt="Cart icon"
+              className="w-5 h-5 cursor-pointer hover:scale-125 transition-transform duration-300"
+            />
+            <img
+              src={wishlistIcon}
+              alt="Wishlist icon"
+              className="w-5 h-5 cursor-pointer hover:scale-125 transition-transform duration-300"
+            />
           </div>
           <div className="flex justify-center relative h-[25px]">
             <button className="bg-[#B88351] text-white rounded-lg hover:scale-105 transition-transform duration-300 font-manjari font-bold text-xl pt-3  pb-1 px-5 absolute -bottom-[30px]">

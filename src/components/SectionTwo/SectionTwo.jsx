@@ -1,9 +1,19 @@
+import { useEffect } from "react";
+import AOS from "aos";
+
 import imageOne from "../../assets/images/SectionTwo/image-one.png";
 import imageTwo from "../../assets/images/SectionTwo/image-two.png";
 import imageThree from "../../assets/images/SectionTwo/image-three.png";
+import "aos/dist/aos.css";
 import "./SectionTwo.css";
 
 const SectionTwo = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
     <section className="section-two-background bg-[#271300] text-white bg-cover">
       <div className="px-20 pt-10 pb-20">
@@ -16,7 +26,12 @@ const SectionTwo = () => {
         </h2>
         <div className="flex flex-col lg:flex-row lg:gap-x-9 md:mb-10 lg:mb-16">
           <div className="max-w-[500px] self-end lg:max-w-none lg:w-2/5 xl:w-[45%] lg:self-start">
-            <img src={imageOne} alt="Barista image one" className="mb-6" />
+            <img
+              src={imageOne}
+              alt="Barista image one"
+              className="mb-6"
+              data-aos="slide-from-left"
+            />
             <p className="font-manjari font-medium text-left mb-10">
               Immerse yourself in our curated selection of beverages and treats,
               expertly prepared by our dedicated team. Whether you're seeking a
@@ -28,10 +43,18 @@ const SectionTwo = () => {
           <div className="max-w-[500px] lg:max-w-none lg:w-3/5 xl:w-[55%] lg:flex lg:flex-col-reverse lg:self-start lg:mt-3">
             <div className="flex gap-4">
               <div className="lg:flex-grow mb-6 lg:mb-0">
-                <img src={imageTwo} alt="Barista image two" />
+                <img
+                  src={imageTwo}
+                  alt="Barista image two"
+                  data-aos="slide-from-right"
+                />
               </div>
               <div className="lg:flex-shrink hidden lg:block">
-                <img src={imageThree} alt="Barista image three" />
+                <img
+                  src={imageThree}
+                  alt="Barista image three"
+                  data-aos="slide-from-right-two"
+                />
               </div>
             </div>
             <p className="font-manjari font-medium text-left mb-10 lg:mb-6">

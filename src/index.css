@@ -4,6 +4,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manjari:wght@100;400;700&family=Noto+Sans+Tamil:wght@100..900&family=Offside&display=swap");
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

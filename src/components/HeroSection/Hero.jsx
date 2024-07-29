@@ -1,11 +1,20 @@
+import { useState } from "react";
+
 import Carousel from "../Carousel/Carousel";
+
 import searchIcon from "../../assets/images/HeroSection/search.png";
 import coffeeCup from "../../assets/images/HeroSection/coffee-cup.png";
+import logoIcon from "../../assets/images/HeroSection/logo-icon.png";
 import coffeeBeans from "../../assets/images/HeroSection/coffee-beans.png";
 import branch from "../../assets/images/HeroSection/branch.png";
 import "./Hero.css";
 
 const Hero = () => {
+  const [isTriggered, setIsTriggered] = useState(false);
+  const handleClick = () => {
+    setIsTriggered(true);
+  };
+
   return (
     <section id="hero" className="">
       <div className="bg-blend-overlay bg-[#221910] min-h-[80vh] px-20 relative bg-cover hero-background z-10">
@@ -42,15 +51,28 @@ const Hero = () => {
         <div className="flex w-full lg:p-[5vw] justify-center lg:justify-end relative h-[200px] sm:h-[230px] md:h-[260px] lg:h-[200px]">
           <div className="w-[300px] h-[300px] absolute -bottom-[150px] sm:w-[320px] sm:h-[320px] sm:-bottom-[160px] md:w-[350px] md:h-[350px] md:-bottom-[180px] lg:w-[380px] lg:h-[380px] lg:-bottom-[185px] xl:w-[450px] xl:h-[450px] xl:-bottom-[220px]">
             <div className="absolute top-0 left-0 w-full h-full rounded-full bg-white bg-opacity-70"></div>
+            <div className="absolute w-4/5 h-4/5 rounded-full bg-white top-[10%] left-[10%] bg-opacity-50"></div>
             <img
               src={coffeeCup}
               alt="Coffee cup"
-              className="absolute top-0 left-0 z-10"
+              className={`absolute top-0 left-0 z-10 transition-opacity duration-1000 delay-[2s] ${
+                isTriggered
+                  ? "move-cup opacity-0"
+                  : "opacity-100 cursor-pointer"
+              }`}
+              onClick={handleClick}
+            />
+            <img
+              src={logoIcon}
+              alt="Logo icon"
+              className={`absolute -top-[4%] -left-[5%] scale-75 transition-opacity duration-1000 ${
+                isTriggered ? "opacity-100" : "opacity-0"
+              }`}
             />
             <img
               src={coffeeBeans}
               alt="Coffee beans"
-              className="absolute top-[120px] left-[80px]"
+              className="absolute top-[165px] left-[95px] scale-90"
             />
           </div>
         </div>
@@ -62,17 +84,22 @@ const Hero = () => {
           alt="Branch"
           className="absolute -top-28 md:-top-52 lg:-top-72 -z-10"
         />
-        <h2 className="font-noto-sans-tamil font-extrabold text-secondary text-2xl md:text-3xl lg:text-4xl lg:text-left lg:ps-20">
+        <h2 className="font-noto-sans-tamil font-extrabold text-secondary text-2xl md:text-3xl lg:text-4xl lg:text-left lg:ps-20 mt-10">
           <span className="border border-secondary p-1 pe-0">
             Discover Our Coffee Sel
           </span>
           ection
         </h2>
-        <div className="xl:px-20 xl:flex xl:items-center mb-10">
-          <div className="xl:w-3/5 mb-10">
-            <Carousel />
+        <div className="xl:px-20 xl:flex xl:items-center mb-10 lg:mt-14 xl:mt-0">
+          <div
+            className={`xl:w-3/5 mb-10 ${
+              isTriggered ? "cursor-default" : "cursor-pointer"
+            }`}
+            onClick={handleClick}
+          >
+            <Carousel visible={isTriggered} />
           </div>
-          <div className="xl:text-left xl:pl-8 px-10 md:px-20 xl:px-0 pt-5">
+          <div className="xl:text-left xl:pl-8 px-10 md:px-20 xl:px-0 pt-5 xl:translate-y-5">
             <h4 className="font-noto-sans-tamil font-extrabold text-2xl mb-5 text-primary lg:text-3xl">
               Explore Our Coffee Menu
             </h4>

@@ -4,3 +4,12 @@
   background-position-x: -25vw;
   background-position-y: -5vh;
 }
+
+[data-aos="rotate-cup"] {
+  transform: rotate(0deg);
+  transition-property: transform;
+
+  &.aos-animate {
+    transform: rotate(-180deg);
+  }
+}
