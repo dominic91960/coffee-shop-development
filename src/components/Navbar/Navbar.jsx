@@ -15,7 +15,7 @@ const Navbar = () => {
         isToggled && "backdrop-blur-sm bg-secondary bg-opacity-40 h-screen"
       }`}
     >
-      <div className="flex justify-between py-4 px-20">
+      <div className="flex justify-between py-4 px-10 md:px-20">
         <a href="#hero" className="h-14 w-auto">
           <img
             src={logo}

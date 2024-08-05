@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 
-import CarouselCard from "../HeroSection/CarouselCard";
+import CarouselCard from "./CarouselCard";
 import cappucino from "../../assets/images/HeroSection/cappuccino.png";
 import americano from "../../assets/images/HeroSection/americano.png";
 import "slick-carousel/slick/slick.css";
