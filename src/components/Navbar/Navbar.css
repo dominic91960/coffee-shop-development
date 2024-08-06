@@ -1,0 +1,25 @@
+.toggle-animation > div {
+  transform: rotate(180deg);
+  background-color: transparent;
+}
+
+.toggle-animation > div::before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.toggle-animation > div::after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+@keyframes animate-open-menu {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-open-menu {
+  animation: animate-open-menu 700ms ease-in-out forwards;
+}

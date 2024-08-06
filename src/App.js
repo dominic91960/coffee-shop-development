@@ -1,12 +1,23 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import Navbar from "./components/Navbar/Navbar";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <p className="text-[50px] text-red-600">Hello World</p>
-    </div>
+    <>
+      <header>
+        <Navbar />
+      </header>
+      {/* <main>
+        <h1>landing</h1>
+        <h1>selection</h1>
+        <h1>offerings</h1>
+        <h1>specialty</h1>
+        <h1>about</h1>
+        <h1>contact</h1>
+      </main>
+      <footer>footer</footer> */}
+    </>
   );
-}
+};
 
 export default App;
