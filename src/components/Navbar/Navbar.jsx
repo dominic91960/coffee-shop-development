@@ -12,47 +12,47 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-transparent text-white font-manjari uppercase">
+    <header className="fixed top-0 z-50 w-full bg-transparent font-manjari uppercase text-white">
       {/* MAIN NAVBAR */}
       <section
-        className={`flex items-center justify-between px-[5vw] md:px-[10vw] py-4 ${
+        className={`flex items-center justify-between px-[5vw] py-4 md:px-[10vw] ${
           isToggled && "backdrop-blur-sm"
         }`}
       >
         <a
           href="#"
-          className="transition-transform duration-300 hover:scale-105 drop-shadow-[1px_1px_2px_rgb(0,0,0)]"
+          className="drop-shadow-[1px_1px_2px_rgb(0,0,0)] transition-transform duration-300 hover:scale-105"
         >
           <img src={logo} alt="Logo" className="h-[40px]" />
         </a>
-        <nav className="hidden space-x-8 md:block text-sm">
+        <nav className="hidden space-x-8 text-sm md:block">
           <a
             href="#"
-            className="hover:text-primary drop-shadow-[1px_1px_2px_rgb(0,0,0)]"
+            className="drop-shadow-[1px_1px_2px_rgb(0,0,0)] hover:text-primary"
           >
             Home
           </a>
           <a
             href="#"
-            className="hover:text-primary drop-shadow-[1px_1px_2px_rgb(0,0,0)]"
+            className="drop-shadow-[1px_1px_2px_rgb(0,0,0)] hover:text-primary"
           >
             Services
           </a>
           <a
             href="#"
-            className="hover:text-primary drop-shadow-[1px_1px_2px_rgb(0,0,0)]"
+            className="drop-shadow-[1px_1px_2px_rgb(0,0,0)] hover:text-primary"
           >
             About
           </a>
           <a
             href="#"
-            className="hover:text-primary drop-shadow-[1px_1px_2px_rgb(0,0,0)]"
+            className="drop-shadow-[1px_1px_2px_rgb(0,0,0)] hover:text-primary"
           >
             Locations
           </a>
           <a
             href="#"
-            className="hover:text-primary drop-shadow-[1px_1px_2px_rgb(0,0,0)]"
+            className="drop-shadow-[1px_1px_2px_rgb(0,0,0)] hover:text-primary"
           >
             Contact
           </a>
@@ -69,35 +69,35 @@ const Navbar = () => {
         <nav className="flex w-full flex-col px-[5vw] text-sm">
           <a
             href="#"
-            className="mt-4 py-4 hover:text-primary drop-shadow-[1px_1px_2px_rgb(0,0,0)]"
+            className="mt-4 py-4 drop-shadow-[1px_1px_2px_rgb(0,0,0)] hover:text-primary"
           >
             Home
             <hr className="border-t-white opacity-10" />
           </a>
           <a
             href="#"
-            className="mt-4 py-4 hover:text-primary drop-shadow-[1px_1px_2px_rgb(0,0,0)]"
+            className="mt-4 py-4 drop-shadow-[1px_1px_2px_rgb(0,0,0)] hover:text-primary"
           >
             Services
             <hr className="border-t-white opacity-10" />
           </a>
           <a
             href="#"
-            className="mt-4 py-4 hover:text-primary drop-shadow-[1px_1px_2px_rgb(0,0,0)]"
+            className="mt-4 py-4 drop-shadow-[1px_1px_2px_rgb(0,0,0)] hover:text-primary"
           >
             About
             <hr className="border-t-white opacity-10" />
           </a>
           <a
             href="#"
-            className="mt-4 py-4 hover:text-primary drop-shadow-[1px_1px_2px_rgb(0,0,0)]"
+            className="mt-4 py-4 drop-shadow-[1px_1px_2px_rgb(0,0,0)] hover:text-primary"
           >
             Locations
             <hr className="border-t-white opacity-10" />
           </a>
           <a
             href="#"
-            className="mt-4 py-4 hover:text-primary drop-shadow-[1px_1px_2px_rgb(0,0,0)]"
+            className="mt-4 py-4 drop-shadow-[1px_1px_2px_rgb(0,0,0)] hover:text-primary"
           >
             Contact
             <hr className="border-t-white opacity-10" />

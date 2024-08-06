@@ -4,30 +4,30 @@ import search from "../../assets/images/Hero/search.png";
 const Hero = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center px-[5vw] md:px-[10vw] min-h-[400px] h-[40vh] bg-cover bg-center bg-[#221910] bg-blend-overlay bg-opacity-80 md:items-start"
+      className="flex h-[40vh] min-h-[400px] flex-col items-center justify-center bg-[#221910] bg-opacity-80 bg-cover bg-center px-[5vw] bg-blend-overlay md:items-start md:px-[10vw]"
       style={{ backgroundImage: `url(${bgHero})` }}
     >
-      <blockquote className="text-primary font-manjari capitalize border border-primary px-[3ch] rounded pt-1 sm:text-2xl lg:text-3xl 2xl:text-4xl relative">
-        <p className="text-5xl sm:text-6xl lg:text-7xl 2xl:text-8xl absolute top-0 left-[3%] sm:left-[4%]">
+      <blockquote className="relative rounded border border-primary px-[3ch] pt-1 font-manjari capitalize text-primary sm:text-2xl lg:text-3xl 2xl:text-4xl">
+        <p className="absolute left-[3%] top-0 text-5xl sm:left-[4%] sm:text-6xl lg:text-7xl 2xl:text-8xl">
           &#8220;
         </p>
         <h1>Where every cup tells a story</h1>
-        <p className="text-5xl sm:text-6xl lg:text-7xl 2xl:text-8xl absolute top-full right-[3%] sm:right-[4%]">
+        <p className="absolute right-[3%] top-full text-5xl sm:right-[4%] sm:text-6xl lg:text-7xl 2xl:text-8xl">
           &#8221;
         </p>
       </blockquote>
-      <div className="flex flex-col items-center text-center font-manjari md:text-left md:items-start md:flex-col-reverse">
+      <div className="flex flex-col items-center text-center font-manjari md:flex-col-reverse md:items-start md:text-left">
         <search className="flex w-fit gap-1 pt-4">
-          <button className="p-0.5 bg-primary rounded bg-opacity-70">
+          <button className="rounded bg-primary bg-opacity-70 p-0.5">
             <img src={search} alt="Search" className="h-4" />
           </button>
           <input
             type="text"
             placeholder="Search Your Happiness in Every Sip"
-            className="text-[9px] bg-white bg-opacity-70 pt-1 px-4 rounded text-secondary placeholder:text-secondary w-[38ch]"
+            className="w-[38ch] rounded bg-white bg-opacity-70 px-4 pt-1 text-[9px] text-secondary placeholder:text-secondary"
           />
         </search>
-        <p className="text-white text-[8px] sm:text-xs lg:text-sm 2xl:text-base pt-4">
+        <p className="pt-4 text-[8px] text-white sm:text-xs lg:text-sm 2xl:text-base">
           Welcome to <span className="font-bold">EspressoZen Cafe</span>, <br />
           where you can search your happiness in every perfectly brewed cup.
         </p>
