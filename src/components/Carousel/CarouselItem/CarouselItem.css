@@ -1,3 +1,13 @@
 .text-lift {
   text-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
 }
+
+.aspect-ratio {
+  aspect-ratio: 8/9;
+}
+
+@media (min-width: 768px) {
+  .aspect-ratio {
+    aspect-ratio: 1;
+  }
+}
