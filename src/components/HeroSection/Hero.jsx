@@ -12,7 +12,7 @@ const Hero = ({ isTriggered, handleClick }) => {
     >
       <div className="flex flex-col justify-center items-start pt-36">
         {/* Main text */}
-        <div className="border border-primary font-manjari text-[5px] md:text-6xl text-primary w-fit pt-4 md:pt-6 pb-1 md:pb-3 md:px-20 px-10 relative h-fit mb-7">
+        <div className="border border-primary font-manjari text-5xl md:text-6xl text-primary w-fit pt-4 md:pt-6 pb-1 md:pb-3 md:px-20 px-10 relative h-fit mb-7">
           <span className="text-6xl md:text-8xl absolute top-0 md:left-10 left-4">
             &#8220;
           </span>
