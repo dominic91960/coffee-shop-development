@@ -34,7 +34,7 @@ const Hero = () => {
       <div className="flex flex-col items-center text-center font-manjari md:flex-col-reverse md:items-start md:text-left">
         {/* Search Bar */}
         <search className="flex w-fit gap-1 pt-4">
-          <button className="rounded bg-primary bg-opacity-70 p-0.5">
+          <button className="rounded bg-primary bg-opacity-70 p-0.5 transition-transform duration-300 hover:scale-105">
             <img src={search} alt="Search" className="h-4 lg:h-5 xl:h-6" />
           </button>
           <input
@@ -44,7 +44,7 @@ const Hero = () => {
           />
         </search>
         {/* Welcome Text */}
-        <p className="pt-4 text-[8px] text-white sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+        <p className="pt-4 text-[8px] text-white sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
           Welcome to <span className="font-bold">EspressoZen Cafe</span>, <br />
           where you can search your happiness in every perfectly brewed cup.
         </p>
