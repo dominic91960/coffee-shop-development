@@ -2,15 +2,15 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Selection from "./components/Selection/Selection";
-import CarouselItem from "./components/Carousel/CarouselItem/CarouselItem";
+import Carousel from "./components/Carousel/Carousel";
 
 const App = () => {
   return (
     <>
       {/* <Navbar /> */}
-      <main className="pt-32">
+      <main className="pt-0">
+        <Carousel />
         {/* <Hero /> */}
-        <CarouselItem />
         {/* <Selection /> */}
         {/* <h1>selection</h1>
         <h1>offerings</h1>
