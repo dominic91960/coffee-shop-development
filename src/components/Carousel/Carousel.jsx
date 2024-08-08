@@ -69,7 +69,7 @@ const Carousel = ({ visible }) => {
     dots: true,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     autoplay: false,
     speed: 4000,
     autoplaySpeed: 4000,
@@ -77,17 +77,25 @@ const Carousel = ({ visible }) => {
     arrows: false,
     pauseOnHover: true,
     responsive: [
+      // {
+      //   breakpoint: 1280,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //   },
+      // },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
   };
 
   return (
-    <div className={`-translate-x-[100vw] ${visible && "slide-in"}`}>
+    <div className={`2xl:-translate-x-[100vw] ${visible && "slide-in"}`}>
       <Slider {...settings}>
         {data.map(({ image, title, text, price }, index) => (
           <CarouselCard

@@ -8,60 +8,62 @@ const Hero = ({ isTriggered, handleClick }) => {
   return (
     <section
       id="hero"
-      className="bg-blend-overlay bg-[#221910] min-h-[80vh] px-20 relative bg-cover hero-background z-10"
+      className="hero-background relative z-10 min-h-[300px] bg-[#221910] bg-cover px-[10vw] bg-blend-overlay md:px-[5vw]"
     >
-      <div className="flex flex-col justify-center items-start pt-36">
+      <div className="flex flex-col items-center justify-center pt-24 md:items-start md:pt-32">
         {/* Main text */}
-        <div className="border border-primary font-manjari text-5xl md:text-6xl text-primary w-fit pt-4 md:pt-6 pb-1 md:pb-3 md:px-20 px-10 relative h-fit mb-7">
-          <span className="text-6xl md:text-8xl absolute top-0 md:left-10 left-4">
+        <div className="relative mb-5 h-fit w-fit border-2 border-primary px-[5vw] pb-0.5 pt-2 font-manjari text-[18px] text-primary sm:text-3xl lg:text-4xl xl:text-5xl">
+          <span className="absolute left-[1vw] top-0 text-5xl sm:text-6xl md:text-7xl">
             &#8220;
           </span>
           <h1>Where Every Cup Tells a Story</h1>
-          <span className="text-6xl md:text-8xl absolute right-4 md:right-10 translate-y-1">
+          <span className="absolute right-[1vw] translate-y-1 text-5xl sm:text-6xl md:text-7xl">
             &#8221;
           </span>
         </div>
         {/* Desc */}
-        <p className="font-manjari text-xl md:text-3xl text-left text-white md:mb-16 mb-8 sm:text-2xl">
-          Welcome to <span className="font-bold">EspressoZen Cafe</span>, <br />{" "}
+        <p className="mb-5 text-center font-manjari text-[9px] text-white sm:text-xs md:text-left md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+          Welcome to <span className="font-bold">EspressoZen Cafe</span>, <br />
           where you can search your happiness in every perfectly brewed cup.
         </p>
         {/* Search */}
         <div className="flex gap-x-2">
-          <button className="bg-primary rounded-lg py-2 px-3 hover:scale-105 transition-transform duration-300">
-            <img src={searchIcon} alt="Search icon" className="w-4 md:w-6" />
+          <button className="rounded bg-primary px-0.5 transition-transform duration-300 hover:scale-105">
+            <img src={searchIcon} alt="Search icon" className="w-5 sm:w-6" />
           </button>
           <input
             type="text"
-            className="outline-none rounded-lg bg-white bg-opacity-80 w-[35ch] md:w-[50ch] text-secondary placeholder:text-secondary px-5 text-sm md:text-base"
+            className="w-[38ch] rounded bg-white bg-opacity-70 pb-1 ps-4 pt-2 font-manjari text-[11px] text-secondary outline-none placeholder:text-secondary sm:text-sm"
             placeholder="Search Your Happiness in Every Sip"
           />
         </div>
       </div>
       {/* Coffee */}
-      <div className="flex w-full lg:p-[5vw] justify-center lg:justify-end relative h-[200px] sm:h-[230px] md:h-[260px] lg:h-[200px]">
-        <div className="w-[300px] h-[300px] absolute -bottom-[150px] sm:w-[320px] sm:h-[320px] sm:-bottom-[160px] md:w-[350px] md:h-[350px] md:-bottom-[180px] lg:w-[380px] lg:h-[380px] lg:-bottom-[185px] xl:w-[450px] xl:h-[450px] xl:-bottom-[220px]">
-          <div className="absolute top-0 left-0 w-full h-full rounded-full bg-white bg-opacity-70"></div>
-          <div className="absolute w-4/5 h-4/5 rounded-full bg-white top-[10%] left-[10%] bg-opacity-50"></div>
+      <div className="relative flex h-[170px] w-full justify-center sm:h-[180px] md:h-[190px] lg:h-[140px] lg:justify-end lg:p-[5vw] xl:h-[150px] 2xl:h-[160px]">
+        <div className="absolute -bottom-[150px] h-[300px] w-[300px] sm:-bottom-[160px] sm:h-[320px] sm:w-[320px] md:-bottom-[180px] md:h-[350px] md:w-[350px] lg:-bottom-[185px] lg:h-[380px] lg:w-[380px] xl:-bottom-[220px] xl:h-[450px] xl:w-[450px]">
+          <div className="absolute left-0 top-0 h-full w-full rounded-full bg-white bg-opacity-70"></div>
+          <div className="absolute left-[10%] top-[10%] h-4/5 w-4/5 rounded-full bg-white bg-opacity-50"></div>
           <img
             src={coffeeCup}
             alt="Coffee cup"
-            className={`absolute top-0 left-0 z-10 transition-opacity duration-1000 delay-[3s] ${
-              isTriggered ? "move-cup opacity-0" : "opacity-100 cursor-pointer"
+            className={`absolute left-0 top-0 z-10 transition-opacity delay-[3s] duration-1000 ${
+              isTriggered
+                ? "move-cup 2xl:opacity-0"
+                : "opacity-100 2xl:cursor-pointer"
             }`}
             onClick={handleClick}
           />
           <img
             src={logoIcon}
             alt="Logo icon"
-            className={`absolute -top-[4%] -left-[5%] scale-75 transition-opacity duration-1000 ${
-              isTriggered ? "opacity-100" : "opacity-0"
+            className={`absolute -left-[5%] -top-[4%] scale-75 transition-opacity duration-1000 ${
+              isTriggered ? "2xl:opacity-100" : "opacity-0"
             }`}
           />
           <img
             src={coffeeBeans}
             alt="Coffee beans"
-            className="absolute top-[165px] left-[95px] scale-90"
+            className="absolute left-[95px] top-[165px] scale-90"
           />
         </div>
       </div>

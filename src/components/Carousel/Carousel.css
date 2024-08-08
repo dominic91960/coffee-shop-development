@@ -17,7 +17,9 @@
   }
 }
 
-.slide-in {
-  animation: slide-in 2s ease-out;
-  transform: translateX(0vw);
+@media (min-width: 1536px) {
+  .slide-in {
+    animation: slide-in 2s ease-out;
+    transform: translateX(0vw);
+  }
 }

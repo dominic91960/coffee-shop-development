@@ -14,7 +14,9 @@
   }
 }
 
-.move-cup {
-  animation: move-cup 2s;
-  transform: translate(-42.2vw, 47.5vh) scale(37%) rotate(90deg);
+@media (min-width: 1536px) {
+  .move-cup {
+    animation: move-cup 2s;
+    transform: translate(-42.2vw, 47.5vh) scale(37%) rotate(90deg);
+  }
 }
