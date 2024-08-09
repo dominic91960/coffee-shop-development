@@ -12,23 +12,44 @@
 }
 
 .slick-prev {
-  top: 40%;
+  top: 50%;
   left: 100%;
 }
 
 .slick-next {
-  top: 60%;
+  top: 70%;
   left: 100%;
 }
 
 .slick-prev:before {
-  font-size: 50px;
-  content: "\2039";
-  color: #271300;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/Carousel/previous.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
 }
 
 .slick-next:before {
-  font-size: 50px;
-  content: "\203A";
-  color: #271300;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/images/Carousel/next.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  transform: scale(125%);
+  transition: transform;
+  transition-duration: 300ms;
 }

@@ -27,6 +27,24 @@ const data = [
     desc: "A creamy blend of rich espresso and steamed milk, topped with a light layer of frothy foam",
     price: "$ 30.00",
   },
+  {
+    image: cappucino,
+    title: "cappucino",
+    desc: "A creamy blend of rich espresso and steamed milk, topped with a light layer of frothy foam",
+    price: "$ 50.00",
+  },
+  {
+    image: americano,
+    title: "americano",
+    desc: "A smooth, bold coffee made by diluting rich espresso with hot water, creating a flavorful and aromatic brew.",
+    price: "$ 70.00",
+  },
+  {
+    image: cappucino,
+    title: "chai latte",
+    desc: "A creamy blend of rich espresso and steamed milk, topped with a light layer of frothy foam",
+    price: "$ 30.00",
+  },
 ];
 
 const Carousel = () => {
@@ -90,7 +108,7 @@ const Carousel = () => {
   };
 
   return (
-    <menu className="px-[5vw] pb-12 pt-5 md:w-1/2 md:px-0 2xl:w-[60%]">
+    <menu className="pb-12 pe-[10vw] pt-5 md:w-1/2 md:px-0 2xl:w-[60%]">
       <Slider {...settings}>
         {data.map(({ image, title, desc, price }) => (
           <CarouselItem image={image} title={title} desc={desc} price={price} />
