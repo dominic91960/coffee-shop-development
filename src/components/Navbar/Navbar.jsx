@@ -15,7 +15,7 @@ const Navbar = () => {
     <header className="fixed top-0 z-50 w-full font-manjari uppercase text-white">
       {/* MAIN NAVBAR */}
       <section
-        className={`md:px-[10vw]} flex items-center justify-between px-[5vw] py-4 ${isToggled && "bg-secondary bg-opacity-30"}`}
+        className={`flex items-center justify-between px-[5vw] py-4 md:px-[10vw] ${isToggled && "bg-secondary bg-opacity-30"}`}
       >
         <a
           href="#"

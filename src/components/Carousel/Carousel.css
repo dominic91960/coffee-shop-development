@@ -1,0 +1,34 @@
+.slick-dots > li > button::before {
+  margin-top: 20px;
+  color: #bf8425;
+  font-size: 10px;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 16px;
+  opacity: 1;
+  color: #bf8425;
+}
+
+.slick-prev {
+  top: 40%;
+  left: 100%;
+}
+
+.slick-next {
+  top: 60%;
+  left: 100%;
+}
+
+.slick-prev:before {
+  font-size: 50px;
+  content: "\2039";
+  color: #271300;
+}
+
+.slick-next:before {
+  font-size: 50px;
+  content: "\203A";
+  color: #271300;
+}
